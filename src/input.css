@@ -1,0 +1,26 @@
+@import "tailwindcss";
+.star-rating {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+        .star-rating input {
+            display: none;
+        }
+        .star-rating label {
+            color: #ddd;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .star-rating input:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #f5b301;
+        }
+        .modal {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .modal-hidden {
+            opacity: 0;
+            transform: scale(0.9);
+            pointer-events: none;
+        }
